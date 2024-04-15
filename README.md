@@ -19,6 +19,8 @@ git clone https://github.com/Habibirani/AdversarialTimeSeries-SimBa.git
 cd AdversarialTimeSeries-SimBa
 conda env create -f environment.yml
 
+```
+
 ## Dependencies
 - Python 3.10
 - TensorFlow 2.x

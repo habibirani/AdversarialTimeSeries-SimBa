@@ -1,11 +1,17 @@
-from data import create_dataset, get_dataloader
+from data import get_dataset, get_dataloader
 from models import SimpleLSTM
 from train import train_model, adversarial_training
 import time
 from evaluate import evaluate, evaluate_adversarial
 
 def main():
-    dataset = create_dataset()
+    ds_list = ["UniMiB SHAR",
+               "UCI HAR",
+               "TWristAR",
+               "Leotta_2021",
+               "Gesture Phase Segmentation"
+               ]
+    dataset = get_dataset(ds_list)
     loader = get_dataloader(dataset)
     
     model = SimpleLSTM()
