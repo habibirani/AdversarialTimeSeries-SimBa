@@ -1,13 +1,13 @@
-# Adversarial Training Demonstrator
+# AdversarialTimeSeries-SimBa
 
 This repository contains a modular Python project using PyTorch for demonstrating the effectiveness of adversarial training across different deep learning models and datasets. The project is structured to facilitate easy experimentation with different models, datasets, and adversarial attacks, particularly focusing on the SimBA (Simple Black-box Adversarial Attacks) method.
 
 ## Structure
-- `models/`: Contains different model architectures.
-- `attacks/`: Implementation of various adversarial attack methods.
-- `data/`: Data loading utilities.
-- `training/`: Scripts for training models.
-- `evaluation/`: Evaluation of models on clean and adversarial data.
+- `models.py`: Contains different DL model architectures.
+- `attacks.py`: Implementation of various adversarial attack methods such as SibMa, SibMA Temporal.
+- `data\`: Data loading utilities.
+- `train.py`: Scripts for training models.
+- `evaluate.py`: Evaluation of models on clean and adversarial data.
 - `main.py`: Main script to run experiments.
 
 ## Installation

@@ -1,5 +1,5 @@
 
-name: TemporalContext-BayesDL-main
+name: AdversarialTimeSeries-SimBa
 
 # higher channels get priority
 channels:
@@ -19,6 +19,7 @@ dependencies:
   - tensorflow==2.6.0
   - torch==1.10.0
   - tsai==0.2.21
+  - torchvision
   # Uncomment the below to add pip dependencies if necessary"
   # - pip:
     # - mydep==1.0

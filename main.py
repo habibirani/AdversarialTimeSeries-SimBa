@@ -1,8 +1,10 @@
 from data import get_dataset, get_dataloader
-from models import SimpleLSTM
+from models import CNN1D, LSTMModel, TransformerEncoder
 from train import train_model, adversarial_training
 import time
 from evaluate import evaluate, evaluate_adversarial
+import torch 
+import torch.nn as nn
 
 def main():
     ds_list = ["UniMiB SHAR",
@@ -14,7 +16,12 @@ def main():
     dataset = get_dataset(ds_list)
     loader = get_dataloader(dataset)
     
-    model = SimpleLSTM()
+    model_list = [
+        "CNN1D",
+        "LSTMModel",
+        "TransformerEncoder"
+    ]
+    model = model_list()
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     print("Starting regular training...")
@@ -36,10 +43,10 @@ if __name__ == '__main__':
 
 
 # Initialize model and optimizer
-model_pgd = SimpleLSTM().to(device)
+model_pgd = model_list().to(device)
 optimizer_pgd = optim.Adam(model_pgd.parameters(), lr=0.01)
 
-model_trades = SimpleLSTM().to(device)
+model_trades = model_list().to(device)
 optimizer_trades = optim.Adam(model_trades.parameters(), lr=0.01)
 
 # PGD Training
