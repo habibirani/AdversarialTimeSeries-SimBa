@@ -10,7 +10,7 @@
 
 cff-version: 1.0.0
 title: >-
-  TemporalContext-BayesDL
+  AdversarialTimeSeries-SimBa
 message: >-
   If you find this project or code useful, please consider citing it as below!
 type: software

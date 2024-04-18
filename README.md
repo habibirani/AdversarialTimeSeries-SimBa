@@ -43,11 +43,24 @@ python main.py
 
 ```
 
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
+
+<!-- CITATION -->
+## Citation
+If you use this repository in your research please use the following BibTeX entry:
+
+```bibtex
+@Misc{AdversarialTimeSeries-SimBa,
+  title = {Demonstrating the effectiveness of adversarial training across 
+           different deep learning models in time series data},
+  author = {Irani, Habib},
+  howpublished = {Github},
+  year = {2024}
+  url = {https://github.com/habibirani/AdversarialTimeSeries-SimBa}
+}
+```
