@@ -1,6 +1,6 @@
 # AdversarialTimeSeries-SimBa
 
-This repository contains a modular Python project using PyTorch for demonstrating the effectiveness of adversarial training across different deep learning models and datasets. The project is structured to facilitate easy experimentation with different models, datasets, and adversarial attacks, particularly focusing on the SimBA (Simple Black-box Adversarial Attacks) method.
+This repository contains a modular Python project using PyTorch for demonstrating the effectiveness of adversarial training across different deep learning models and datasets. The project is structured to facilitate easy experimentation with different models, datasets, and adversarial attacks, particularly focusing on the SimBA (Simple Black-box Adversarial Attacks) method. This project is built upon the base paper for the SimBa attack, which provides a foundation for generating adversarial examples in the image domain. You can find the paper [here](https://arxiv.org/abs/1905.07121). Modifications have been made to adapt SimBa for time series data, including adjustments to the perturbation generation process and integration with appropriate evaluation metrics for time series classification tasks. Detailed documentation on these modifications can be found in the attacks.py module.
 
 ## Structure
 - `models.py`: Contains different DL model architectures.
