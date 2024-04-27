@@ -43,10 +43,10 @@ python main.py
 
 ```
 ## Results and Evaluation
-# Clean Data Performance
+### Clean Data Performance
 The models implemented in this repository are evaluated on clean data to establish baseline performance metrics. The evaluation includes metrics such as accuracy, precision, recall, and F1 score, depending on the specific task and dataset.
 
-# Adversarial Robustness
+### Adversarial Robustness
 The effectiveness of adversarial training in enhancing model robustness against adversarial attacks is a key focus of this repository. Adversarial examples are generated using the SimBA (Simple Black-box Adversarial Attacks) method and its variations implemented in attacks.py. The trained models are then evaluated on both clean and adversarial data to assess their robustness.
 
 
